@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Please provide your username"
+read username
+
+echo "Provide your password"
+read password
+
+if [[$username == 'admin' && $password == 'admin1234' ]];
+then
+echo "Welcome $username "
+else
+echo "Invalid credentials for $username"
+fi
+
