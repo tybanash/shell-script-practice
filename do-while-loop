@@ -1,0 +1,16 @@
+#!/bin/bash
+
+valid=true
+count=0
+
+while [ $valid ]
+
+do
+echo "The value of count is $count"
+if [[ count -eq 5 ]];
+then
+exit
+else
+((count++))
+fi
+done
